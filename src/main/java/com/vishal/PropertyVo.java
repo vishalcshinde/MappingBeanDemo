@@ -1,5 +1,9 @@
 package com.vishal;
 
+import com.wordnik.swagger.annotations.ApiModel;
+import com.wordnik.swagger.annotations.ApiModelProperty;
+
+@ApiModel
 public class PropertyVo {
 	String name;
 	String value;
@@ -18,7 +22,7 @@ public class PropertyVo {
 		this.name = name;
 		this.value = value;
 	}
-
+	@ApiModelProperty
 	public String getName() {
 		return name;
 	}
@@ -27,6 +31,7 @@ public class PropertyVo {
 		this.name = name;
 	}
 
+	@ApiModelProperty
 	public String getValue() {
 		return value;
 	}

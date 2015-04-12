@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<mvc:annotation-driven conversion-service="conversionService" />
-	<context:component-scan base-package="com.vishal"></context:component-scan>
+	<context:component-scan base-package="com.vishal, com.mangofactory.swagger.configuration"></context:component-scan>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
 		<property name="prefix" value="/WEB-INF/view/" />
